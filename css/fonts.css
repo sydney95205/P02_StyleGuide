@@ -1,0 +1,21 @@
+
+@font-face {
+	font-family: 'Larsseit';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Larsseit.eot');
+	src: url('../fonts/Larsseit.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Larsseit.woff2') format('woff2'),
+		 url('../fonts/Larsseit.woff') format('woff'),
+		 url('../fonts/Larsseit.ttf') format('truetype');
+	src: url('../fonts/Larsseit.ttf');
+
+}
+
+
+@font-face {
+	font-family: "Futura", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Futura.ttf');
+}
