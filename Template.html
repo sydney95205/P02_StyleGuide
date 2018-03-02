@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width-of-device,initial-scale=1.0">
+
+    <title>P02 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+    <h1 class="styleguide">P02 - Style Guide Template</h1>
+
+    <nav>
+
+      <p>On this page:</p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+      <p>Other pages:</p>
+      <ul>
+        <li><a href="https://cai3a1.axshare.com/#g=1&p=gaming_console">User-flows</a>
+        <li><a href="Template.html">Style Guide</a>
+        <li><a href="Citations.html">Citations</a>
+      </ul>
+
+    </nav>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Navigation Button -->
+      <section>
+
+        <h2 class="styleguide">Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="button-nav" &gt;HOME&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button-nav">HOME</a>
+
+      </section>
+
+
+      <!-- In text link -->
+      <section>
+
+        <h2 class="styleguide">In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.intext_link,.intext_link:hover,.intext_link:link </p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="intext_link" href ="#"&gt;in-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a  class="intext_link" href ="#">in-text link</a>
+
+      </section>
+
+
+      <!-- Submit Buttons  -->
+      <section>
+
+        <h2 class="styleguide">Submit Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button_submit,.button_submit:hover, .button_submit:focus</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="button_submit" href="#"&gt;Submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button_submit" href="#">Submit</a>
+
+      </section>
+
+
+      <!-- Reset Buttons -->
+      <section>
+
+        <h2 class="styleguide">Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button_reset, .button_reset:hover, .button_reset:focus </p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="button_reset" href="#"&gt;Reset&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button_reset" href="#">Reset</a>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- TEXT ELEMENTS SECTION  -->
+    <section id="text_elements">
+        <!-- Text Input Field  -->
+        <section>
+
+          <h2 class="styleguide">Text Input Field</h2>
+
+          <h3>CSS selector:</h3>
+          <p>label,input</p>
+
+          <h3>Sample code:</h3>
+
+          <code>&lt;label&gt;Your Name&lt;/label&gt;</code>
+          <code>&lt;form&gt;&lt;input type="name"&gt;&lt;/form&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <label for="name">Full Name:</label>
+          <form><input type="text" id="name" placeholder="Enter Your Name"></form>
+
+          <!--Ratio form -->
+          <p>Please select your gender:</p>
+          <form>
+            <label for="guy">Guy</label>
+            <input name="male" id="guy" type="radio"><br>
+
+            <label for="girl">Girl</label>
+            <input name="female" id="girl" type="radio"><br>
+
+          </form>
+
+
+        </section>
+
+        <!-- Three levels of headings -->
+        <section>
+
+          <h2 class="styleguide">Headings</h2>
+
+          <h3>CSS selector:</h3>
+          <p>h1.heading1, h2.heading2, h3.heading3</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;h1 class="heading1"&gt;Fuku&lt;/h1&gt;</code>
+          <code>&lt;h2 class="heading2"&gt;Fuku&lt;/h2&gt;</code>
+          <code>&lt;h3 class="heading3"&gt;Fuku&lt;/h3&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <h1 class="heading1">Fuku</h1>
+          <h2 class="heading2">Fuku</h2>
+          <h3 class="heading3">Fuku</h3>
+
+        </section>
+
+        <!-- Paragraphs -->
+        <section>
+
+          <h2 class="styleguide">Paragraphs</h2>
+
+          <h3>CSS selector:</h3>
+          <p>p</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;p&gt;Type text here&lt;/p&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had. Under folly balls death own point now men. Match way these she avoid see death. She whose drift their fat off.</p>
+
+        </section>
+
+      <!-- Bulleted Lists -->
+      <section>
+
+        <h2 class="styleguide">Bulleted Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.bulleted_list</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class="bulleted_list"&gt;</code>
+          <code>&lt;li&gt;Dresses&lt;li&gt;</code>
+          <code>&lt;li&gt;Hoodies&lt;li&gt;</code>
+          <code>&lt;li&gt;Jumpers&lt;li&gt;</code>
+          <code>&lt;li&gt;Loungewear&lt;li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ul class="bulleted_list">
+          <li>Dresses</li>
+          <li>Hoodie</li>
+          <li>Jumpers</li>
+          <li>Loungewear</li>
+        </ul>
+
+      </section>
+
+      <!-- Numbered Lists -->
+      <section>
+
+        <h2 class="styleguide">Numbered Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.numbered_list</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ol class="bulleted_list"&gt;</code>
+          <code>&lt;li&gt;Dresses&lt;li&gt;</code>
+          <code>&lt;li&gt;Hooide&lt;li&gt;</code>
+          <code>&lt;li&gt;Jumpers&lt;li&gt;</code>
+          <code>&lt;li&gt;Loungewear&lt;li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ol class="numbered_list">
+          <li>Dresses</li>
+          <li>Hoodie</li>
+          <li>Jumpers</li>
+          <li>Loungewear</li>
+        </ol>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <section id="combined_elements">
+
+      <!--Main navigation -->
+      <section>
+
+        <h2 class="styleguide">Your main navigation</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.navigation_bar a, .navigation_bar_box a, .navigation_bar a:hover, .navigation_bar a:focus</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class="navigation_bar"&gt;</code>
+          <code>&lt;a href =""&gt;Home&lt;/a&gt;</code>
+          <code>&lt;a href =""&gt;New In&lt;/a&gt;</code>
+          <code>&lt;a href =""&gt;Clothing&lt;/a&gt;</code>
+          <code>&lt;a href =""&gt;Shoe&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <nav class="navigation_bar">
+          <a href ="#">HOME</a>
+          <a href ="#">WOMEN</a>
+          <a href ="#">MEN</a>
+          <a href ="#">SALES</a>
+          <a href ="#">CONTACT</a>
+        </nav>
+
+      </section>
+
+
+      <!-- A product/service listing -->
+      <section>
+
+        <h2 class="styleguide">A Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.container, .item</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="container"&gt;</code>
+        <code>&lt;div class="item"&gt;</code>
+        <code>&lt;img src="image/products/lazy5.jpg" alt="Socks"&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="container">
+
+          <div class="item">
+            <img src="image/products/lazy5.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="image/products/lazy5.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="image/products/lazy5.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="image/products/lazy5.jpg" alt="">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Website Grid Structure -->
+      <section>
+
+        <h2 class="styleguide">Website Grid Structure</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.grid1, .grid1_row, .grid1_1, .grid1_2,.grid2_1, .grid2_2, .grid2_3,.grid3_1, .grid3_2, .grid3_3, .grid3_4</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="grid_row"&gt;</code>
+        <code>&lt;div class="grid1_1"&gt;&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="grid_row">
+
+          <div class="grid1">grid1</div>
+        </div>
+
+
+        <div class="grid_row">
+          <div class="grid1_1">grid1_1</div>
+          <div class="grid1_2">grid1_2</div>
+        </div>
+
+        <div class="grid_row">
+          <div class="grid2_1">grid2_1</div>
+          <div class="grid2_2">grid2_2</div>
+          <div class="grid2_3">grid2_3</div>
+        </div>
+
+        <div class="grid_row">
+          <div class="grid3_1">grid3_1</div>
+          <div class="grid3_2">grid3_2</div>
+          <div class="grid3_3">grid3_3</div>
+          <div class="grid3_4">grid3_4</div>
+        </div>
+
+      </section>
+
+      <!-- Website colour swatches -->
+      <section>
+
+        <h2 class="styleguide">Website colour swatches</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.color_swathces1, .color_swathces2,.color_swathces3,.color_swathces4,.color_swathces5,.color_swathces6, </p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p class="color_swatches1"&gt;90cad5&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p class="color_swatches1">C36891</p>
+        <p class="color_swatches2">403F63</p>
+        <p class="color_swatches3">74B9E8</p>
+        <p class="color_swatches4">F383AA</p>
+        <p class="color_swatches5">FFFFFF</p>
+
+
+      </section>
+
+    </section>
+
+  </body>
+</html>

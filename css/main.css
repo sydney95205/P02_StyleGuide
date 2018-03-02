@@ -1,0 +1,366 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+
+body {
+  font-family: "Larsseit";
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 0.15em solid #333;
+}
+
+
+section p {
+  margin-top: 0;
+}
+
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+nav {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.15em solid #333;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none solid red;
+  text-align: center;
+
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+img {
+
+	max-width: 100%;
+	min-height: 1px;
+}
+
+
+
+
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  font-family: "Futura";
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1em 2em;
+  color: #FFF;
+  background-color: #525050;
+  text-transform: uppercase;
+  text-decoration: none;
+	-webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+
+}
+
+.button-nav a{
+  color:white;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
+}
+
+/* Styling for the in-text link */
+.intext_link{
+  color:#322826;
+}
+.intext_link:hover, .intext_link:focus{
+  color:#ffa8c7;
+}
+
+
+/* Styling for the submit button */
+.button_submit {
+  font-family: "Futura";
+  font-weight: bold;
+  border-radius: 4em;
+  display: inline-block;
+  padding: .5em .5em;
+  color: white;
+  background-color: #322826;
+  border: .4em solid #322826;
+  text-decoration: none;
+	-webkit-transition: background-csolor 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+
+
+.button_submit:hover, .button-nav:focus {
+	-webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: white;
+  color:#322826;
+
+
+}
+
+
+
+
+
+/* Styling for the reset button */
+.button_reset {
+  font-family: "Futura";
+  font-weight: bold;
+  border-radius: 2em;
+  display: inline-block;
+  padding: .5em .8em;
+  color: white;
+  background-color: #ffa8c7;
+  border: .4em solid #ffa8c7;
+  text-decoration: none;
+	-webkit-transition: background-csolor 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.button_reset:hover, .button_reset:focus {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  background-color: white;
+  color:#ffa8c7;
+
+
+}
+
+
+/* Styling for the  text input field and a label */
+label{
+	color:#322826;
+	font-size: 1.2em;
+}
+
+input {
+    width: 20em;
+    margin: .5em .5em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    border: .4em solid #322826;
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Three levels of headings styling */
+h1.heading1{
+  font-family: "Futura";
+  text-transform: uppercase;
+	font-size: 2.5em;
+}
+h2.heading2{
+  font-family: "Futura";
+  text-transform: uppercase;
+	font-size: 1.7em;
+}
+h3.heading3{
+  font-family: "Futura";
+  text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+/* styling for paragraph */
+p{
+	font-size: 1em;
+}
+
+
+/* styyling for the bulleted lists */
+.bulleted_list {
+	color:#322826;
+}
+
+/* styling for the numberred lists */
+
+.numbered_list{
+color:#322826;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*styling for navigation*/
+.navigation_bar, .grid_row{
+	  display:flex;
+}
+
+
+.navigation_bar a{
+
+  margin-bottom: 0.25em;
+	margin-top: 0.25em;
+	margin: 1em;
+  border-radius: 0.25em;
+	width:15%;
+
+
+  font-family: "Futura";
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding: 1em 1em;
+  color: #FFF;
+  background-color: #525050;
+  text-transform: uppercase;
+  text-decoration: none;
+	-webkit-transition: background-csolor 0.4s ease-in-out;
+	transition: background-color 0.4s ease-in-out;
+}
+
+.navigation_bar_box a{
+  display: block;
+}
+
+
+.navigation_bar a:hover, .navigation_bar a:focus {
+  background-color: #EEE;
+  color:white;
+	width:100%;
+
+}
+
+
+/*styling for product listing*/
+.container{
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.item{
+
+  flex-grow: 1;
+
+}
+
+
+/*styling for grid structure*/
+.grid_row {
+
+	text-align: center;
+	color: white;
+
+}
+
+.grid1_row{
+	background-color: #8a8a8a;
+	width:100%;
+	margin:0.5em;
+	padding: 0.7em;
+	}
+
+.grid1 {
+	background-color: #8a8a8a;
+	width:100%;
+	margin:0.5em;
+	padding: 0.7em;
+}
+
+
+.grid1_1, .grid1_2{
+		background-color: #8a8a8a;
+		width:50%;
+		margin:0.5em;
+		padding: 0.7em;
+}
+
+.grid2_1, .grid2_2, .grid2_3{
+		background-color: #8a8a8a;
+		width:33.33%;
+		margin:0.5em;
+		padding: 0.7em;
+}
+
+.grid3_1, .grid3_2, .grid3_3, .grid3_4{
+		background-color: #8a8a8a;
+		width:25%;
+		margin:0.5em;
+		padding: 0.7em;
+}
+
+/*styling for color swathces*/
+.color_swatches1{
+	background-color: #1C1B1C;
+	border-radius: 0.5em;
+	padding:0.7em;
+  color: white;
+
+}
+
+
+.color_swatches2{
+	background-color: #7A7A7A;
+	border-radius: 0.5em;
+	padding:0.7em;
+}
+.color_swatches3{
+	background-color: #C6C6C6;
+	border-radius: 0.5em;
+	padding:0.7em;
+}
+.color_swatches4{
+	background-color: #ECECEC;
+	border-radius: 0.5em;
+	padding:0.7em;
+}
+.color_swatches5{
+	background-color: #E3CFCC;
+	border-radius: 0.5em;
+	padding:0.7em;
+}
+.color_swatches6{
+	background-color: #CBA1A4;
+	border-radius: 0.5em;
+	padding:0.7em;
+}

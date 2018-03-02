@@ -1,0 +1,15 @@
+
+@font-face {
+	font-family: "Futura", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Futura.ttf');
+}
+
+@font-face{
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-style: normal;
+  src:
+      url("fonts/Helvetica.ttf") format("truetype");
+}

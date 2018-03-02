@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment method</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main-project2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+
+    <img class="logoImage" src="image/icons/logo.png" alt="the company's logo">
+    <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">MENU</button>
+    <nav id="nav-items" class="nav_main_wrap hidden">
+
+      <ul class="web_navigation">
+
+        <li class="nav_link"><a href="home.html">Home</a></li>
+         <li class="nav_link"><a href="women.html">Women</a></li>
+         <li class="nav_link"><a href="men.html">Men</a></li>
+        <li class="nav_link">
+        <div class="dropdown">
+          <a href="Accessories.html">Accessories</a>
+          <div class="dropdown-content">
+            <a href="socks.html">Socks</a>
+          </div>
+        </div>
+      </li>
+
+         <li class="nav_link"><a href="sale.html">Sales</a></li>
+        <li class="nav_link"><a href="Contact.html">Contact</a></li>
+      </ul>
+
+      <div class="cart_nav">
+        <input type="search" id="mySearch" placeholder="Search">
+         <a href="shopping_cart.html">
+           <img class="CartIcon" src="image/icons/cart.png" alt="a shopping cart icon">
+         </a>
+      </div>
+    </nav>
+
+
+<div class="home_container">
+        <div class="grid1_0">
+          <div class="banner">
+            <img src="image/banner/bannerpay.png" >
+              <div class="centered">MAKE YOUR PAYMENT</div>
+          </div>
+        </div>
+    </div>
+
+
+
+  
+     
+
+          
+
+
+ <div class="container">
+  <div class="col1">
+    <div class="card">
+      <div class="front">
+        <div class="type">
+          <img class="bankid"/>
+        </div>
+        <span class="chip"></span>
+        <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+        <div class="date"><span class="date_value">MM / YYYY</span></div>
+        <span class="fullname">FULL NAME</span>
+      </div>
+      <div class="back">
+        <div class="magnetic"></div>
+        <div class="bar"></div>
+        <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+        <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random corporation. <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+      </div>
+    </div>
+  </div>
+  <div class="col2">
+    <label>Card Number</label>
+    <input class="number" type="text" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    <label>Cardholder name</label>
+    <input class="inputname" type="text" placeholder=""/>
+    <label>Expiry date</label>
+    <input class="expire" type="text" placeholder="MM / YYYY"/>
+    <label>Security Number</label>
+    <input class="ccv" type="text" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+          
+          
+          
+          
+        
+          
+          
+      <div class="flex-container-pay-now-1">
+
+          <h3>Billing Address</h3>
+
+          <form class="lables2">
+            <input type="text" placeholder="Address1">
+          </form>
+
+          <form class="lables2">
+            <input type="text" placeholder="Address2">
+          </form>
+
+          <form class="lables2">
+            <input type="text" placeholder="City">
+          </form>
+
+          <form class="lables2">
+          <input type="text" placeholder="Post Code">
+          </form>
+
+        </div>
+   
+
+
+
+
+  <div class="flex-item-pay">
+    <a class="button hvr-sweep-to-left" href="confirm_order.html">Confirm Your Order</a>
+    </div>
+
+
+            <div class="home_container grid1_0">
+                <div class ="footer" >
+                <h3>Discover Your Fashion</h3>
+                    <p>Follow Us</p>
+                  <img class="icon_logo" src="image/icons/facebook.png" alt="facebook logo" onclick="location.href='https://www.facebook.com'">
+                  <img class="icon_logo" src="image/icons/twitter.png" alt="twitter logo" onclick="location.href='https://twitter.com'">
+                    <img class="icon_logo" src="image/icons/instagram.png" alt="instagram logo" onclick="location.href='https://www.instagram.com/?hl=en'">
+                  <p> 2018 All Rights Reserved &copy FUKU's Sydney Huang & Zhihan Wei</p>
+                  <a href="Citations.html">Citation</a>
+                  <a href="Template.html">Style Guide</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+
+
+       <script  src="js/index.js"></script>
+
+           <script src="js/javascript.js"></script>
+
+    </body>
+    </html>

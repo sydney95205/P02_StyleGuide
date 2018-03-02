@@ -1,0 +1,422 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+body {
+
+  font-family: 'Helvetica', sans-serif;
+  padding: 2rem;
+  color: #58595B;
+
+
+}
+
+.centered{
+  font-family: 'Futura', sans-serif;
+  margin-bottom: 0.3em;
+}
+
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+section h2 {
+  font-family: 'Futura', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  color: #939598;
+}
+
+code{
+  color: #808285;
+}
+
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+header{
+  color:#029046;
+}
+
+h4{
+  color:#6D6E71;
+}
+
+a{
+  color:#5a95b3;
+}
+
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+.logoImage{
+		margin-left: 1em;
+		width: 6em;
+		height: auto;
+	}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+
+.button-nav a {
+  text-decoration: none;
+  color:black;
+}
+
+.button-nav a:hover, .button-nav a:focus  {
+   color:gray;
+	 border-bottom: 0.1em solid gray;
+	 border-radius: 0.1rem;
+}
+
+/* Styling for the intext_link */
+.intext_link{
+  color: #0189bb;
+}
+
+.intext_link:hover, .intext-link:focus{
+   color: #90cad5;
+}
+
+/* Styling for the submit button */
+.button {
+  display: inline-block;
+  padding: 0.6em;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+  border: solid black 0.1em;
+  border-right: solid black 0.5em;
+
+}
+
+.button:hover {
+  color: black;
+}
+
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
+  color: white;
+}
+.hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+
+label{
+	color:#5a95b3;
+	font-size: 1.2em;
+}
+
+
+input {
+
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0;
+    border: 0.2em solid #D2D3D4;
+    border-radius: 0.5em;
+
+}
+
+
+
+
+
+/* styling for the bulleted lists */
+.bulleted_list li {
+	color: gray;
+  margin: 0.5em;
+}
+
+
+.numbered_list{
+color:#5a95b3;
+}
+
+.link-nav:hover, .link-nav:focus {
+  color: #5AAE46;
+}
+
+.link-nav{
+  color: #029046;
+}
+
+.textstyle{
+  font-style:oblique;
+}
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*styling for navigation*/
+.web_navigation{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+
+.web_navigation a{
+  color:black;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.web_navigation a:hover, .web_navigation a:focus {
+  color:pink;
+	/*text-decoration-line: underline;*/
+	border-bottom: 0.1em solid pink;
+	border-radius: 0.1rem;
+}
+
+
+@media (max-width: 70.68em){
+  ul.web_navigation li{
+    padding: 0.1em 3.5em;
+  }
+}
+
+
+@media (max-width: 61.87em){
+  ul.web_navigation li{
+    padding: 0.1em 2.5em;
+  }
+
+  .cart_nav{
+    display: none;
+  }
+}
+
+
+@media (max-width: 51.87em){
+  ul.web_navigation li{
+    padding: 0.1em 1.5em;
+  }
+
+  .cart_nav{
+
+    display: none;
+  }
+}
+
+
+
+/*styling for product/service listing*/
+
+.box{
+display:flex;
+flex-wrap: wrap;
+}
+
+
+.Prod-list1  .Prod-list2  .Prod-list3 .Prod-list4{
+  flex-grow: 1;
+  width: 25%;
+}
+
+figcaption{
+text-align: center;
+}
+
+.description_type{
+  list-style-type: none;
+  color:gray;
+  text-align: right;
+
+}
+
+.description_detail{
+  list-style-type: none;
+  margin-left: -1.5em;
+  text-align: left;
+}
+
+
+/*styling for color swathces*/
+.Color1{
+  padding: 0.8em;
+  background-color: #90cad5;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+.Color2{
+  padding: 0.8em;
+  background-color: #0189bb;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+.Color3{
+  padding: 0.8em;
+  background-color: #a0c2e0;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+.Color4{
+  padding: 0.8em;
+  background-color: #5a95b3;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+.Color5{
+  padding: 0.8em;
+  background-color: #e2d6a8;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+.Color6{
+  padding: 0.8em;
+  background-color: #bfa176;
+  margin-bottom: 1em;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+
+/*styling for grid structure*/
+
+.grid1_0, .grid1_1, .grid2_1, .grid3_1, .grid4_3, .grid4_1  {
+
+  float: left;
+  margin-bottom: 0.2em;
+  width: 100%;
+  /*border-right: solid;
+  border-color: white;*/
+}
+
+.banner img{
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+@media (min-width: 41em){
+  .grid3_1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56em){
+  .grid1_1 {
+    width: 50%;
+  }
+
+  .grid2_1 {
+    width: 33.33333%;
+  }
+
+  .grid3_1{
+    width: 25%;
+  }
+
+  .grid4_3{
+   width: 75%;
+ }
+
+  .grid4_1{
+   width: 25%;
+ }
+
+
+}
