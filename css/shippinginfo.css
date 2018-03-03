@@ -1,0 +1,133 @@
+form {
+  width: 45%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 5%;
+  font-family: 'Futura', sans-serif;
+
+  border-radius: 10px;
+  font-size: 0.8em;
+  border-weight: 1px;
+}
+
+form h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+form fieldset {
+  padding: 20px;
+  background-color: white;
+}
+form ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+form ul li label{
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  color:black;
+  
+}
+
+form ul li input[type="text"]{
+  width: 100%;
+  
+  display:inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.1em;
+  padding-left: 10px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+form ul li input[type="checkbox"]{
+  
+}
+
+fieldset{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form legend {
+  font-size: 1.1em;
+}
+
+
+
+.billingshipping {
+  margin-top: 20px;
+  margin-left: 10%;
+}
+.billingshipping label{
+  display: inline-block;
+  width: 70%;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 0em;
+}
+
+.billingshipping input{
+  width: 1.5em;  
+  display:inline-block;
+  box-sizing: 0.1px;
+  height: 12px;
+  font-size: 1em;
+  padding-left: 1px;
+  margin-top: 8px;
+  
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: white;
+        font-size: 0.6em;
+    }
+    form {
+        width: 80%;
+    }
+    label{
+      width: 100% !important;
+    }
+
+    .billingshipping label{
+      width: auto;
+      display: inline;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: white;
+        font-size: 0.6em;
+    }
+    form{
+      width: 90%;
+      margin: 20px 0;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    body {
+		
+        background-color: white;
+        font-size: 0.65em;
+    }
+
+    form{
+      width: 95%;
+    }
+}
