@@ -12,8 +12,7 @@
   </head>
   <body>
 
-
-    <a href="home.html"><img class="logoImage" src="image/icons/logo.png" alt="the company's logo"></a>
+<a href="home.html"><img class="logoImage" src="image/icons/logo.png" alt="the company's logo"></a>
     <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">MENU</button>
     <nav id="nav-items" class="nav_main_wrap hidden">
 
@@ -24,7 +23,7 @@
          <li class="nav_link"><a href="men.html">Men</a></li>
         <li class="nav_link">
         <div class="dropdown">
-          <a href="Accessories.html">Accessories</a>
+          <a>Accessories</a>
           <div class="dropdown-content">
             <a href="socks.html">Socks</a>
           </div>
@@ -54,52 +53,44 @@
     </div>
           
      
-    <h1>FUKU</h1>
     
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-      <h1>FUKU</h1>
-        
       
      
-   
- <div class="container">
-  <div class="col1">
-    <div class="card">
-      <div class="front">
-        <div class="type">
-          <img class="bankid"/>
-        </div>
-        <span class="chip"></span>
-        <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
-        <div class="date"><span class="date_value">MM / YYYY</span></div>
-        <span class="fullname">FULL NAME</span>
-      </div>
-      <div class="back">
-        <div class="magnetic"></div>
-        <div class="bar"></div>
-        <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
-       
-      </div>
-    </div>
-  </div>
-  <div class="col2">
-    <label>Card Number</label>
-    <input class="number" type="text" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-    <label>Cardholder name</label>
-    <input class="inputname" type="text" placeholder=""/>
-    <label>Expiry date</label>
-    <input class="expire" type="text" placeholder="MM / YYYY"/>
-    <label>Security Number</label>
-    <input class="ccv" type="text" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+ <form id="shippingBillingForm" name="shippingBillingForm" action="" method="">
     
-  </div>
-</div>
-  
+            <fieldset>
+                <legend> Payment Infomation </legend>
+                <ul>
+                    <li>
+                        <label> Card Type: </label>
+                        <input name="type of card"   type="text" required/>
+                    </li>
+                    
+                    <li>
+                        <label> Card Number: </label>
+                        <input name="inputname" type="text" required />
+                    </li>
+                    <li>
+                        <label> Cardholder name: </label>
+                        <input name="lastNameShip" type="text" required/>
+                    </li>
+                    <li>
+                        <label> Expiry date: </label>
+                        <input name="addressShip" placeholder="MM / YYYY" type="text" required/>
+                    </li>
+                    <li>
+                        <label> Security Number: </label>
+                        <input name="cityShip" placeholder="CVC" type="text" required/>
+                    </li>
+                    
+
+                </ul>
+            </fieldset>
+           
+            
+        </form>
+   
+
      
       
       
@@ -117,7 +108,8 @@
     
 
   <div class="flex-item-pay">
-    <a class="button hvr-sweep-to-left" href="confirm_order.html">Confirm Your Order</a>
+      <a class="button hvr-sweep-to-left" href="shipping_information.html">Back</a>
+    <a class="button hvr-sweep-to-left" href="confirm_order.html">Confirm</a>
     </div>
       
        <div class="home_container grid1_0">
