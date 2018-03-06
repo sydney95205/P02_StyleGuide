@@ -270,6 +270,7 @@ color:#5a95b3;
 @media (max-width: 61.87em){
   ul.web_navigation li{
     padding: 0.1em 2.5em;
+
   }
 
   .cart_nav{
@@ -400,9 +401,11 @@ text-align: center;
   .grid3_1 {
     width: 50%;
   }
+  
+  
 }
 
-@media (min-width: 56em){
+@media (min-width: 40em){
   .grid1_1 {
     width: 50%;
   }

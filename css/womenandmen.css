@@ -1,0 +1,119 @@
+.product_listing img {
+  padding: 1em;
+  width: 400px;
+  border-radius: 2px;
+  border: thin solid #DDDDDD;
+  margin: 0.5em;
+  border-radius: 2px;
+}
+
+@media (max-width: 1600px) {
+
+   .product_listing img{
+    padding: 1em;
+    width: 250px;
+    border: thin solid #DDDDDD;
+    margin: 0.5em;
+    border-radius: 2px;
+  }
+
+  
+}
+
+.Prod-list1  .Prod-list2  .Prod-list3 .Prod-list4{
+  flex-grow: 1;
+  width: 25%;
+}
+
+figcaption{
+text-align: center;
+}
+
+.description_type{
+  list-style-type: none;
+  color:gray;
+  text-align: right;
+
+}
+
+
+ .sales{
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.sales:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	-webkit-transform: scale(1.02, 1.05);
+}
+
+
+
+.bottom_image:hover{
+	transform: scale(1.5,1.5);
+}
+
+.bottom_image:hover::after{
+	opacity:1;
+}
+
+
+@media (min-width:38em){
+	.new_products{
+		display:flex;
+	}
+
+	.cart_nav{
+	  float: right;
+		margin-top: -2em;
+		 margin-right: 1em;
+	}
+
+
+}
+.product_detail_image {
+	height: auto;
+	max-width: 100%;
+	margin-top: -6em;
+
+}
+
+
+
+.new_product_description{
+  margin-left: 2em;
+}
+
+
+
+
+.flex {
+  display: flex; /* Make products flex in row direction (default) */
+  flex-wrap: wrap; /* Make products overflow on new row */
+  justify-content: center; /* Or space-between or space-around */
+}
+
+.flex > section {
+  flex: 1 1 0; /* Prevent the extra space around content */
+  text-align: center; /* Align text on center */
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Display flex in column */
+  align-items: center; /* Align items on center */
+  max-width: 400px; /* Set max-width so the last items will behave in a more traditional way */
+}
+
+.flex > section > p {
+  flex-grow: 1; /* Keep p's same size */
+}
+
+
+
+.home_product_listing img {
+  float: left;
+  margin-bottom: 0.2em;
+  width: 100%;
+}
+
+@media (min-width: 56em){
+  .home_product_listing {
+    width: 90%;
+  }
