@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main-project2.css">
     <link rel="stylesheet" href="css/fonts.css">
-
+    <link rel="stylesheet" href="css/cart.css">
 
   </head>
   <body>
@@ -52,43 +52,61 @@
     </div>
 
 
-    <div class="grid1_0">
-      <h1></h1>
+      
+      <div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Name</label>
+    <label class="product-quantity">Size</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-line-price">Price</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="image/products/wclothing1.png">
     </div>
-    <div class="flex-container ">
-
-      <div class="flex-item grid3_1">
-        <img src="image/products/wclothing1.png" alt="lazy3">
-      </div>
-
-      <div class="flex-item grid3_1">
-        <p>Name</p>
-        <h3>Fluffy Heart Knit Top</h3>
-      </div>
-
-    <div class="flex-item grid3_1">
-        <p>Size</p>
-        <h3>XS</h3>
-      </div>
-        <div class="flex-item grid3_1">
-        <p>Price</p>
-        <h3>$89.90</h3>
-      </div>
-
+    <div class="product-details">
+      <div class="product-title">Fluffy Heart Knit Top-Lazy cuz Limited.</div>
+      
     </div>
-
-
-
-    <div class="flex-container">
-        <div class="flex-item-pay-sub">
-            <hr>
-        <h4>Subtotal: $89.90</h4>
-      </div>
-
+    <div class="product-quantity">XS</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
     </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">89.90</div>
+  </div>
 
+ 
 
+  <div class="totals">
+    
+    <div class="totals-item">
+      <label>Tax (5%):</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping:</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>SubTotal：</label>
+      <div class="totals-value" id="cart-total">108.5</div>
+    </div>
+  </div>
+    
+</div>
 
+      
+      
+      
+      
     <div class="flex-item-pay">
     <a class="button hvr-sweep-to-left" href="shipping_information.html">Checkout</a>
     </div>
@@ -108,7 +126,6 @@
                  <a href="https://github.com/sydney95205/P02_StyleGuide">GitHub</a>
                 </div>
               </div>
-
 
 
            <script src="js/javascript.js"></script>
